@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     fetchData();
-  });
+  }, []);
 
   async function fetchData() {
     const notesArray = await dkeeper.readNotes();
